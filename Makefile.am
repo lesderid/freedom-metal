@@ -73,6 +73,7 @@ nobase_include_HEADERS = \
 	metal/drivers/sifive_local-external-interrupts0.h \
 	metal/drivers/sifive_spi0.h \
 	metal/drivers/sifive_test0.h \
+	metal/drivers/sifive_trace.h \
 	metal/drivers/sifive_uart0.h \
 	metal/machine/inline.h \
 	metal/machine/platform.h \
@@ -169,6 +170,7 @@ libriscv__mmachine__@MACHINE_NAME@_a_SOURCES = \
 	src/drivers/sifive_local-external-interrupts0.c \
 	src/drivers/sifive_spi0.c \
 	src/drivers/sifive_test0.c \
+	src/drivers/sifive_trace.c \
 	src/drivers/sifive_uart0.c \
 	src/button.c \
 	src/cache.c \

@@ -15,7 +15,7 @@
  * hart 0 to finish copying the datat section, zeroing the BSS, and running
  * the libc contstructors.
  */
-void _synchronize_harts() {
+void __metal_synchronize_harts() {
 #if __METAL_DT_MAX_HARTS > 1
 
     int hart = metal_cpu_get_current_hartid();

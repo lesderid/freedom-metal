@@ -185,6 +185,7 @@ libriscv__mmachine__@MACHINE_NAME@_a_SOURCES = \
 	src/shutdown.c \
 	src/spi.c \
 	src/switch.c \
+	src/synchronize_harts.c \
 	src/timer.c \
 	src/trap.S \
 	src/tty.c \
@@ -198,7 +199,6 @@ lib_LIBRARIES += libriscv__menv__metal.a
 
 libriscv__menv__metal_a_SOURCES = \
 	gloss/crt0.S \
-	gloss/synchronize_harts.c \
 	gloss/nanosleep.c \
 	gloss/sys_access.c \
 	gloss/sys_chdir.c \
